@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习心得 - 小小的家</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        
+        .main-table {
+            width: 760px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .main-table td {
+            padding: 0;
+            vertical-align: top;
+        }
+        
+        /* 导航样式 */
+        .nav-cell {
+            text-align: center;
+            font-size: 22px;
+            background-color: #FF0000;
+            color: white;
+            height: 30px;
+        }
+        
+        .nav-cell a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: all 0.3s;
+        }
+        
+        .nav-cell a:hover {
+            color: #FFD700;
+            text-decoration: underline;
+        }
+        
+        /* 侧边栏样式 */
+        .sidebar {
+            background-color: #0067C3;
+            width: 140px;
+            height: 600px;
+            padding: 20px 0;
+        }
+        
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .sidebar li {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 5px 0;
+            transition: all 0.3s;
+        }
+        
+        .sidebar a:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+        
+        /* 内容区域样式 */
+        .content-cell {
+            padding: 20px;
+        }
+        
+        .content-title {
+            font-size: 36px;
+            color: #0067C3;
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+        
+        .learning-section {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .learning-section h2 {
+            color: #FF0000;
+            font-size: 24px;
+            margin-top: 0;
+            border-left: 4px solid #0067C3;
+            padding-left: 10px;
+        }
+        
+        .learning-section p {
+            line-height: 1.6;
+            font-size: 16px;
+            text-align: justify;
+        }
+        
+        .learning-section ul {
+            padding-left: 20px;
+        }
+        
+        .learning-section li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        
+        .quote {
+            font-style: italic;
+            color: #666;
+            border-left: 3px solid #FFD700;
+            padding-left: 15px;
+            margin: 15px 0;
+        }
+        
+        /* 页脚样式 */
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 50px;
+            font-size: 14px;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 800px) {
+            .main-table {
+                width: 100%;
+            }
+            
+            .content-title {
+                font-size: 28px;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .sidebar {
+                width: 100px;
+            }
+            
+            .sidebar a {
+                font-size: 16px;
+            }
+            
+            .content-title {
+                font-size: 24px;
+            }
+            
+            .learning-section h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 主表格 -->
+    <table class="main-table" border="0" cellpadding="0" cellspacing="0">
+        <!-- 第二行：导航菜单 -->
+        <tr>
+            <td colspan="2" class="nav-cell">
+                <a href="../index.htm">首页</a>
+                <a href="jianjie.htm">个人简介</a>
+                <a href="donghua.htm">动画作品</a>
+                <a href="xiangce.htm">我的相册</a>
+                <a href="xuexi.htm">学习心得</a>
+                <a href="mailto:3131957921@qq.com">写信给我</a>
+            </td>
+        </tr>
+        
+        <!-- 第三行：侧边栏和主内容 -->
+        <tr>
+            <!-- 第一列：侧边栏 -->
+            <td class="sidebar" width="140" height="600">
+                <ul>
+                    <li><a href="#programming">编程学习</a></li>
+                  
+                </ul>
+            </td>
+            
+            <!-- 第二列：主内容 -->
+            <td class="content-cell" width="620" height="600" valign="top">
+                <h1 class="content-title">学习心得</h1>
+                
+                <div class="learning-section" id="programming">
+                    <h2>编程学习心得</h2>
+                    <p>作为一名计算机专业的学生，编程是我学习过程中的重要组成部分。从最初接触C语言到现在学习Python和Web开发，我深刻体会到编程不仅是技术，更是一种思维方式。</p>
+                    <p>我的编程学习心得：</p>
+                    <ul>
+                        <li><strong>实践是最好的老师</strong>：理论学习固然重要，但只有通过实际编码才能真正掌握知识</li>
+                        <li><strong>代码规范很重要</strong>：良好的代码风格和注释习惯让代码更易读、易维护</li>
+                        <li><strong>调试能力是关键</strong>：学会使用调试工具，能够快速定位和解决问题</li>
+                        <li><strong>持续学习是常态</strong>：技术更新迅速，需要保持学习的热情和动力</li>
+						<li><strong>学会利用好资源</strong>：前辈们的经验能让我们少走弯路</li>
+                    </ul>
+                    <p class="quote">"编程不是关于你知道什么，而是关于你能够解决什么问题。"</p>
+                
+             
+               
+        <!-- 第四行：页脚 -->
+        <tr>
+            <td colspan="2" class="footer">
+                <script>
+                    var currentDate = new Date();
+                    var options = { year: 'numeric', month: 'long', day: 'numeric' };
+                    document.write(currentDate.toLocaleDateString('zh-CN', options));
+                </script>
+                &nbsp; Copyright &copy; 2025 张新源版权所有
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
